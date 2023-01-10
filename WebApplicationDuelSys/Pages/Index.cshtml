@@ -1,0 +1,71 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Tournament History</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th>Title</th>
+					<th>Location</th>
+					<th>StartDate</th>
+					<th>EndDate</th>
+					<th>Players</th>
+					<th>Gender</th>
+					<th>Tournament Type</th>
+							
+				</tr>
+				</thead>
+				<tbody>
+				<form method="post">
+					@foreach (var tournament in Model.Tournaments)
+					{
+						<tr>
+							<td>@tournament.Tittle</td>
+							<td>@tournament.Location</td>
+							<td>@tournament.StartDate</td>
+							<td>@tournament.EndDate</td>
+							<td>@tournament.RegisteredPlayers.Count/ @tournament.MaxPlayers</td>
+							<td>@tournament.Gender</td>
+							<td>@tournament.TournamentSystem.Name</td>
+							@if(!User.Identity.IsAuthenticated)
+							{
+								<th>
+									<button asp-page-handler="Authentication">Join</button>
+								</th>
+							}
+							else 
+							{
+								@if(@tournament.RegisteredPlayers.Contains(Model.AuthenticatedCustomer))
+								{
+									<th>
+										<button asp-page-handler="LeaveTournament" asp-route-tournamentId="@tournament.Id">Leave</button>
+									</th>
+								}
+								else
+								{
+									<th>
+										<button asp-page-handler="AttendTournament" asp-route-tournamentId="@tournament.Id">Join</button>
+									</th>
+								}
+							}
+						</tr>
+					}
+					<p style="text-align: center;">@TempData["Error"]</p>							
+				</form>
+						
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+    

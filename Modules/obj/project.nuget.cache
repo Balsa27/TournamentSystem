@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "e9fxH8Thi713TAIfjUjAl1ntCy562co74qYkXiZu01prJa594EYRiJrOjKRWug8MJ581pvAypJpBL8fRZeXMrA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\balsa\\Desktop\\Balsa-Stevovic-Final\\SynthesissAssignment\\Modules\\Modules.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\balsa\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

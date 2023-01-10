@@ -1,0 +1,15 @@
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\bin\Release\net6.0\DAL.deps.json
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\bin\Release\net6.0\DAL.dll
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\bin\Release\net6.0\DAL.pdb
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\bin\Release\net6.0\Modules.dll
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\bin\Release\net6.0\Modules.pdb
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\DAL.AssemblyInfo.cs
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\DAL.csproj.CopyComplete
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\DAL.dll
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\refint\DAL.dll
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\DAL.pdb
+C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\DAL\obj\Release\net6.0\ref\DAL.dll

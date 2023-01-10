@@ -1,0 +1,55 @@
+﻿@page
+@using Modules.Entities
+@model WebApplicationDuelSys.Pages.TournamentResultModel
+@{
+}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Tournament History</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th>Round</th>
+					<th>Player One</th>
+					<th>Player Two</th>
+					<th>First Player Score</th>
+					<th>Second Player Score</th>
+					<th>Winner</th>
+				</tr>
+				</thead>
+				<tbody>
+					@for(int r = 0; r < Model.AllTournamentRounds.Count; r++)
+					{
+						
+						@for(int m = 0; m < @Model.AllTournamentRounds[r].Matches.Count; m++)
+						{
+							<tr>
+							<td>@(r+1)</td>
+							
+							<td>@Model.AllTournamentRounds[r].Matches[m].FirstPlayer.FirstName</td>
+							<td>@Model.AllTournamentRounds[r].Matches[m].SecondPlayer.FirstName</td>
+							<td>@Model.AllTournamentRounds[r].Matches[m].FirstPlayerScore</td>
+							<td>@Model.AllTournamentRounds[r].Matches[m].SecondPlayerScore</td>
+							@if(@Model.AllTournamentRounds[r].Matches[m].Winner is not null)
+							{
+								<td>@Model.AllTournamentRounds[r].Matches[m].Winner.FirstName</td>
+							}
+							else
+							{
+								<td>No winner</td>
+							}
+						</tr>
+						}
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+    

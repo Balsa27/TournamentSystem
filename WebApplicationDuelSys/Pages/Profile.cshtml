@@ -1,0 +1,120 @@
+﻿@page
+@model WebApplicationDuelSys.Pages.ProfileModel
+@{
+}
+
+<div class="container rounded bg-white mt-5 mb-5">
+	<div class="row" style="right: 50px">
+		<div class="col-md-3 border-right">
+			<div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">My Profile</span><span> </span></div>
+		</div>
+		<div class="col-md-5 border-right">
+			<div class="p-3 py-5">
+				<div class="d-flex justify-content-between align-items-center mb-3">
+					<h4 class="text-right">Profile Settings</h4>
+				</div>
+
+				<div class="row mt-3" style="left: 50px">
+					<form asp-page-handler="UpdateCustomerInfo">
+
+						<div class="form-outline form-white mb-4">
+							<label asp-for="Customer.Username">Username:*</label><br />
+							<input asp-for="Customer.Username" type="text" required /><br />
+						</div>
+
+						<div class="form-outline form-white mb-4">
+							<label asp-for="Customer.Password">Password:*</label><br />
+							<input asp-for="Customer.Password" type="password" required /><br />
+						</div>
+
+						<div class="form-outline form-white mb-4">
+							<label asp-for="Customer.Email" class="form-label">Email:*</label><br />
+							<input asp-for="Customer.Email" type="email" required /><br />
+							
+						</div>
+
+						<div class="form-outline form-white mb-4">
+							<label asp-for="Customer.FirstName" class="form-label">First Name:*</label><br />
+							<input asp-for="Customer.FirstName" type="text" required /><br />
+							
+						</div>
+
+						<div class="form-outline form-white mb-4">
+							<label asp-for="Customer.LastName" class="form-label">Last Name:*</label><br />
+							<input asp-for="Customer.LastName" type="text" required /><br />
+							
+						</div>
+
+						<div class="dropdown">
+							<label for="gender">Gender:</label>
+
+							<select asp-for="Customer.Gender" name="gender" required id="gender">
+								<option value="MALE">MALE</option>
+								<option value="FEMALE">FEMALE</option>
+								<option value="OTHER">OTHER</option>
+							</select>
+						</div>
+						<button class="mt-5 text-center" style="position: relative; top: 50px" type="submit">Save Information</button>
+						<p style="text-align: center;">@TempData["Error"]</p>							
+
+					</form>
+
+					<form asp-page-handler="SignOut">
+						<button class="mt-5 text-center" style="position: relative; top: 50px" type="submit">Log Out</button>
+					</form>
+				</div>
+
+			</div>
+			
+			<br />
+			<br />
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Tournament History</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Title</th>
+									<th>Location</th>
+									<th>StartDate</th>
+									<th>EndDate</th>
+									<th>Players</th>
+									<th>Gender</th>
+									<th>Tournament</th>
+									<th>View Results</th>
+
+
+								</tr>
+							</thead>
+							<tbody>
+								<form method="post">
+									@foreach (var tournament in Model.GetAllCustomerTournaments())
+									{
+									<tr>
+										<td>@tournament.Tittle</td>
+										<td>@tournament.Location</td>
+										<td>@tournament.StartDate</td>
+										<td>@tournament.EndDate</td>
+										<td>@tournament.RegisteredPlayers.Count/ @tournament.MaxPlayers</td>
+										<td>@tournament.Gender</td>
+										<td>@tournament.TournamentSystem.Name</td>
+										<td><input onclick="location.href='/TournamentResult?tournamentId=@tournament.Id'" type="button" value="View results" style="background-color: gray"></td>  
+										gra
+									</tr>
+									}
+								</form>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

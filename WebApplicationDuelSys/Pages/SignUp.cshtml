@@ -1,0 +1,70 @@
+﻿@page
+@model WebApplicationDuelSys.Pages.SignUpModel
+@{
+}
+
+
+<section class="vh-100 gradient-custom">
+	<div class="container py-5 h-100">
+		<div class="row d-flex justify-content-center align-items-center h-100">
+			<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+				<div class="card bg-dark text-white" style="border-radius: 1rem;">
+					<div class="card-body p-5 text-center">
+
+						<div class="mb-md-5 mt-md-4 pb-5">
+
+							<h2 class="fw-bold mb-2 text-uppercase">sign-up</h2>
+							<p class="text-white-50 mb-5">Create an account to participate!</p>
+
+							<form method="post">
+								
+								<div class="form-outline form-white mb-4">
+									<label asp-for="singUpDTO.Username">Username:*</label><br />
+									<input asp-for="singUpDTO.Username" /><br />
+									<span class="validation-message text-danger" asp-validation-for="singUpDTO.Username"></span>
+								</div>
+
+								<div class="form-outline form-white mb-4">
+									<label asp-for="singUpDTO.Password">Password:*</label><br />
+									<input asp-for="singUpDTO.Password"  type="password" /><br />
+									<span class="validation-message text-danger" asp-validation-for="singUpDTO.Password"></span>
+								</div>
+
+								<div class="form-outline form-white mb-4">
+									<label asp-for="singUpDTO.FirstName" class="form-label">First Name:*</label><br />
+									<input asp-for="singUpDTO.FirstName" type="text" /><br />
+									<span class="validation-message text-danger" asp-validation-for="singUpDTO.FirstName"></span>
+								</div>
+							
+								<div class="form-outline form-white mb-4">
+									<label asp-for="singUpDTO.LastName" class="form-label">Last Name:*</label><br />
+									<input asp-for="singUpDTO.LastName" type="text" /><br />
+									<span class="validation-message text-danger" asp-validation-for="singUpDTO.LastName"></span>
+								</div>	
+							
+								<div class="form-outline form-white mb-4">
+									<label asp-for="singUpDTO.Email" class="form-label">Email:*</label><br />
+									<input asp-for="singUpDTO.Email" type="email" /><br />
+									<span asp-validation-for="singUpDTO.Email" class="validation-message text-danger"></span>
+								</div>
+															
+								<div class="dropdown">
+									<label for="gender">Gender:</label>
+
+									<select asp-for="singUpDTO.Gender" name="gender" id="gender">
+										<option value="MALE">MALE</option>
+										<option value="FEMALE">FEMALE</option>
+										<option value="OTHER">OTHER</option>
+									</select>
+								</div>
+							
+								<button class="btn btn-outline-light btn-lg px-5" style="position: relative; top: 50px"  type="submit">Create Account</button>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

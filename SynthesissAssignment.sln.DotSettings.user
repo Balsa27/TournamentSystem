@@ -1,0 +1,25 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Web.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\balsa\AppData\Local\Temp\JetBrains\ReSharperPlatformVs17\vAny_05e1d5c2\CoverageData\_SynthesissAssignment.497254652\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6d796f90_002Df733_002D43b8_002Db759_002D438c749e723b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateTournamentWithCorrectData" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\balsa\Desktop\Balsa-Stevovic-Final\SynthesissAssignment\UnitTesting" Presentation="&amp;lt;UnitTesting&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e2e8a386_002D12a2_002D421e_002D9a2b_002Da9b41180edee/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTournamentTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.Tests.TournamentManagerTest.CreateTournamentTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.Tests.TournamentManagerTest.CreateTournamentWithSameTittleTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.Tests.TournamentManagerTest.UpdateTournamentTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.Tests.TournamentManagerTest.DeleteTournamentTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.Tests.TournamentManagerTest.TryRegisterPlayerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.UserManagerTest.GetCustomerByUsernameTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.UserManagerTest.GetCustomerByIdTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.UserManagerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.Tests.AuthenticationManagerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Tests.CustomerTest.GettersTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Tests.CustomerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Tests.TournamentTest.GettersTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C8212DC-4A0C-49AC-A1DA-A909E6CE187A::net6.0::UnitTesting.Manager_test.Tests.TournamentManagerTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

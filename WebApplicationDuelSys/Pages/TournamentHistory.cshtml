@@ -1,0 +1,50 @@
+﻿@page
+@using Modules.Entities
+@model WebApplicationDuelSys.Pages.TournamentHistoryModel
+@{
+}
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Tournament History</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Location</th>
+							<th>StartDate</th>
+							<th>EndDate</th>
+							<th>Players</th>
+							<th>Gender</th>
+							<th>Tournament Type</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var tournament in Model.GetAllFinishedTournaments())
+						{
+							<tr>
+								<td>@tournament.Tittle</td>
+								<td>@tournament.Location</td>
+								<td>@tournament.StartDate</td>
+								<td>@tournament.EndDate</td>
+								<td>@tournament.RegisteredPlayers.Count/ @tournament.MaxPlayers</td>
+								<td>@tournament.Gender</td>
+								<td>@tournament.TournamentSystem.Name</td>
+								<th>
+									<input onclick="location.href='/TournamentResult?tournamentId=@tournament.Id'" type="button" value="View results" style="background-color: gray">
+								</th>
+							</tr>
+							
+						}
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
